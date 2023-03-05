@@ -1,0 +1,35 @@
+.btn_primary {
+  align-items: flex-start;
+  background-color: var(--green);
+  border-radius: 4px;
+  box-shadow: 0px 8px 15px #3151df4c;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  left: 199px;
+  min-width: 241px;
+  padding: 9.8px 31px;
+  position: absolute;
+  top: 618px;
+}
+
+.continue-to-book {
+  letter-spacing: 0;
+  line-height: 40px;
+  min-height: 31px;
+  text-align: center;
+  white-space: nowrap;
+  width: 178px;
+}
+
+.btn_primary.btn_primary-1 {
+  align-self: center;
+  height: 56px;
+  left: unset;
+  margin-left: 77px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 9.1px 31px;
+  position: unset;
+  top: unset;
+}

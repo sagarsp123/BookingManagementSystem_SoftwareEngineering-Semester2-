@@ -1,0 +1,40 @@
+.username {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  min-height: 135px;
+  width: 640px;
+}
+
+.email {
+  letter-spacing: 2.80px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 38px;
+}
+
+.frame-4-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 80px;
+  display: flex;
+  height: 81px;
+  min-width: 640px;
+  padding: 22px 32px;
+}
+
+.makwanashyam6gmailcom {
+  letter-spacing: 2.40px;
+  line-height: normal;
+  min-height: 33px;
+}
+
+.username.username-1 {
+  min-height: 121px;
+}
+
+.username.username-3 {
+  min-height: 118px;
+}
+

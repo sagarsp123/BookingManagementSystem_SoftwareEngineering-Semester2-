@@ -1,0 +1,265 @@
+.signup-page {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  gap: 62px;
+  height: 1080px;
+  padding: 33.6px 18px;
+  width: 1920px;
+}
+
+.flex-col {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  margin-top: 17.44px;
+  min-height: 995px;
+  width: 1742px;
+}
+
+.menu {
+  align-items: flex-start;
+  display: flex;
+  gap: 80px;
+  height: 27px;
+  min-width: 246px;
+}
+
+.help {
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 27px;
+  min-width: 51px;
+  text-align: right;
+}
+
+.contact-us {
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 27px;
+  min-width: 115px;
+  text-align: right;
+}
+
+.overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 142px;
+  min-width: 1742px;
+}
+
+.overlap-group2 {
+  height: 849px;
+  margin-top: 13px;
+  position: relative;
+  width: 960px;
+}
+
+.overlap-group {
+  height: 96px;
+  left: 373px;
+  position: absolute;
+  top: 752px;
+  width: 324px;
+}
+
+.o2 {
+  height: 53px;
+  left: 87px;
+  position: absolute;
+  top: 23px;
+  width: 55px;
+}
+
+.o1 {
+  height: 52px;
+  left: 39px;
+  position: absolute;
+  top: 23px;
+  width: 55px;
+}
+
+.b-k-easy {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.vector {
+  height: 73px;
+  left: 73px;
+  position: absolute;
+  top: 13px;
+  width: 75px;
+}
+
+.vector-1 {
+  height: 73px;
+  left: 33px;
+  position: absolute;
+  top: 13px;
+  width: 76px;
+}
+
+.overlap-group1 {
+  height: 935px;
+  position: relative;
+  width: 640px;
+}
+
+.login {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 935px;
+  position: absolute;
+  top: 0;
+  width: 562px;
+}
+
+.login2 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 935px;
+  position: absolute;
+  top: 5px;
+  width: 412px;
+}
+
+.already-have-an-account-login {
+  align-self: flex-start;
+  letter-spacing: 2.4px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 39px;
+  width: 413px;
+}
+
+.overlap-group-1 {
+  height: 43px;
+  margin-right: 2px;
+  margin-top: 32px;
+  position: relative;
+  width: 480px;
+}
+
+.vector-1-1 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 22px;
+  width: 480px;
+}
+
+.frame-13 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 43px;
+  left: 144px;
+  min-width: 192px;
+  padding: 7px 8px;
+  position: absolute;
+  top: 0;
+}
+
+.or-continue-with {
+  letter-spacing: 2px;
+  line-height: normal;
+  min-height: 27px;
+}
+
+.input-field {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  left: 0;
+  min-height: 635px;
+  position: absolute;
+  top: 55px;
+  width: 640px;
+}
+
+.group-1000001540 {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  height: 119px;
+  min-width: 585px;
+}
+
+.username-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  min-height: 119px;
+  width: 308px;
+}
+
+.st-name {
+  letter-spacing: 2.8px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 38px;
+}
+
+.frame-4-4 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 80px;
+  display: flex;
+  height: 81px;
+  min-width: 308px;
+  padding: 22px 32px;
+}
+
+.shyam-1,
+.makwana {
+  letter-spacing: 2.4px;
+  line-height: normal;
+  min-height: 33px;
+  width: 178px;
+}
+
+.username-5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  min-height: 119px;
+  width: 265px;
+}
+
+.frame-4-5 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 80px;
+  display: flex;
+  height: 81px;
+  min-width: 319px;
+  padding: 22px 32px;
+}
+
+.icon-home {
+  height: 36px;
+  margin-top: 14.44px;
+  width: 36px;
+}
+
+.signuptext {
+  align-self: center;
+  left: -50px;
+  position: relative;
+  top: -100px;
+}
