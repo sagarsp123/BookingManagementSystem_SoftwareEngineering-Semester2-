@@ -1,0 +1,207 @@
+.login-page {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  gap: 76px;
+  height: 1080px;
+  padding: 48px 62px;
+  width: 1920px;
+}
+
+.overlap-group2-1 {
+  height: 863px;
+  margin-left: 98px;
+  margin-top: 60px;
+  position: relative;
+  width: 644px;
+}
+
+.login-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 863px;
+  position: absolute;
+  top: 0;
+  width: 644px;
+}
+
+.welcome-back-traveler {
+  letter-spacing: 3.6px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 54px;
+}
+
+.dont-have-a-account-sign-up {
+  letter-spacing: 2.4px;
+  line-height: normal;
+  margin-top: 13px;
+  min-height: 33px;
+}
+
+.input-field-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  min-height: 389px;
+  position: relative;
+  width: 640px;
+}
+
+.forget-password {
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-right: 3px;
+  margin-top: 46px;
+  min-height: 27px;
+  min-width: 193px;
+}
+
+.overlap-group-2 {
+  align-self: center;
+  height: 43px;
+  margin-right: 4px;
+  margin-top: 171px;
+  position: relative;
+  width: 480px;
+}
+
+.vector-1-2 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 22px;
+  width: 480px;
+}
+
+.frame-13-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 43px;
+  left: 144px;
+  min-width: 192px;
+  padding: 7px 8px;
+  position: absolute;
+  top: 0;
+}
+
+.or-continue-with-1 {
+  letter-spacing: 2px;
+  line-height: normal;
+  min-height: 27px;
+}
+
+.flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  min-height: 936px;
+  width: 978px;
+}
+
+.flex-row {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  gap: 62px;
+  min-width: 344px;
+}
+
+.menu-1 {
+  align-items: flex-start;
+  display: flex;
+  gap: 80px;
+  height: 27px;
+  margin-bottom: 3px;
+  min-width: 246px;
+}
+
+.help-1 {
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 27px;
+  min-width: 51px;
+  text-align: right;
+}
+
+.contact-us-1 {
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 27px;
+  min-width: 115px;
+  text-align: right;
+}
+
+.icon-home-1 {
+  height: 36px;
+  width: 36px;
+}
+
+.overlap-group3 {
+  height: 849px;
+  position: relative;
+  width: 960px;
+}
+
+.overlap-group1-1 {
+  height: 96px;
+  left: 493px;
+  position: absolute;
+  top: 752px;
+  width: 324px;
+}
+
+.o2-1 {
+  height: 53px;
+  left: 87px;
+  position: absolute;
+  top: 23px;
+  width: 55px;
+}
+
+.o1-1 {
+  height: 52px;
+  left: 39px;
+  position: absolute;
+  top: 23px;
+  width: 55px;
+}
+
+.b-k-easy-1 {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.vector-2 {
+  height: 73px;
+  left: 73px;
+  position: absolute;
+  top: 13px;
+  width: 75px;
+}
+
+.vector-3 {
+  height: 73px;
+  left: 33px;
+  position: absolute;
+  top: 13px;
+  width: 76px;
+}
+
+.Loginfailtext {
+  align-self: center;
+  left: 270px;
+  position: relative;
+  top: 110px;
+}
