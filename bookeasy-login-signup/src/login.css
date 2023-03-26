@@ -1,0 +1,90 @@
+.welcome-back-traveler {
+  letter-spacing: 3.6px;
+  line-height: normal;
+}
+
+.left_spacing {
+  position: fixed;
+  left: 150px;
+  top: 108px;
+}
+
+.username_input {
+  margin-top: 65px;
+  position: relative;
+
+  height: 81px;
+  min-height: 33px;
+  gap: 17px;
+  width: 640px;
+  min-width: 640px;
+
+  background-color: var(--white);
+  border-radius: 80px;
+  padding: 22px 32px;
+
+  letter-spacing: 2.4px;
+  line-height: normal;
+}
+
+.button_login {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.line {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.email {
+  position: relative;
+  margin-top: 30px;
+}
+
+.password {
+  position: relative;
+  margin-top: 30px;
+}
+
+.forgot_password {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+.firebase_auth {
+  position: relative;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+
+.explorer_pic {
+  position: fixed;
+  top: 60px;
+  left: 900px;
+}
+
+.help {
+  position: fixed;
+  top: 23px;
+  left: 1560px;
+
+  cursor: pointer;
+}
+
+.contact {
+  position: fixed;
+  top: 23px;
+  left: 1684px;
+
+  cursor: pointer;
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 1834px;
+}

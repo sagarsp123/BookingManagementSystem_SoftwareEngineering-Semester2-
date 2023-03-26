@@ -1,0 +1,17 @@
+.home-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.text_header {
+  position: relative;
+  margin-top: 32px;
+  /* top: 30px; */
+}
+
+.button_header {
+  position: relative;
+  margin-top: 50px;
+  /* top: 30px; */
+}
