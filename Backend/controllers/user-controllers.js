@@ -5,9 +5,9 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const { User } = require("../models");
+const { User, Subscribe } = require("../models");
 const { Op } = require("sequelize");
-const sendMail = require("../config/send-mail");
+const { resetMail, subscribeMail } = require("../config/send-mail");
 
 exports.signup = async (req, res, next) => {
   try {
@@ -26,6 +26,7 @@ exports.signup = async (req, res, next) => {
         first_name,
         last_name,
         password,
+        auth_type: "email",
       });
       return res.status(201).json({ message: "Account created successfully" });
     }
@@ -49,17 +50,71 @@ exports.login = async (req, res, next) => {
         return res.status(401).json({ error: "Email or password is incorrect" });
       } else {
         const token = jwt.sign(
-          { userId: user.id, email: user.email },
-            process.env.TOKEN_SECRET,
+          { userId: user.id, email: user.email, phone_number: user.phone_number },
+          process.env.TOKEN_SECRET,
           { expiresIn: "1h" }
         );
         return res.status(200).json({
           id: user.id,
-          email: user.email,
           token: token,
+          first_name: user.first_name,
+          last_name: user.last_name
         });
       }
     }
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+};
+
+exports.firebaseAuth = async (req, res, next) => {
+  try {
+    let { auth_type } = req.body;
+    if(auth_type == "google" || auth_type == "facebook"){
+      let { email, display_name, photo_url } = req.body;
+      let [ first_name, last_name ] = display_name.split(" ");
+      const user = await User.create({
+        email,
+        first_name,
+        last_name,
+        photo_url,
+        auth_type,
+      });
+
+      const token = jwt.sign(
+        { userId: user.id, email: user.email, phone_number: user.phone_number },
+        process.env.TOKEN_SECRET,
+        { expiresIn: "1h" }
+      );
+      return res.status(200).json({
+        id: user.id,
+        token: token,
+        first_name: first_name,
+        last_name: last_name
+      });
+    }
+    else if(auth_type == "phone"){
+      let { phone_number } = req.body;
+
+      const user = await User.create({
+        phone_number,
+        auth_type,
+      });
+
+      const token = jwt.sign(
+        { userId: user.id, email: user.email, phone_number: user.phone_number },
+        process.env.TOKEN_SECRET,
+        { expiresIn: "1h" }
+      );
+      return res.status(200).json({
+        id: user.id,
+        token: token,
+        first_name: user.first_name,
+        last_name: user.last_name
+      });
+    }
+    return res.status(401).json({error : "Authentication failed"});
   } catch (error) {
     console.log(error);
     next(error);
@@ -80,10 +135,10 @@ exports.resetPassword = async (req, res, next) => {
       user.reset_token = token;
       user.token_exp_time = Date.now() + 30 * 60000;
       await user.save();
-      const sendEmail = await sendMail(
+      await resetMail(
         user.email,
         user.first_name,
-        "http://18.189.189.83:3000/reset-password/" + token
+        "http://localhost:3000/reset-password/" + token
       );
       return res.status(200).json({ message: "Email sent successfully" });
     }
@@ -119,6 +174,29 @@ exports.newPassword = async (req, res) => {
       user.token_exp_time = null;
       await user.save();
       return res.status(200).json({ message: "Password has been successfully reset" });
+    }
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+};
+
+exports.subscribe = async (req, res, next) => {
+  try {
+    let { email } = req.body;
+    const is_subscribed = await Subscribe.findOne({
+      where: { email },
+    });
+    if (!is_subscribed) {
+      await subscribeMail(
+        email
+      );
+      await Subscribe.create({
+        email
+      });
+      return res.status(201).json({ message: "Thank you for subscribing to our daily newsletter." });
+    } else {
+      return res.status(200).json({ message: "You have already subscribed to our daily newsletter." });
     }
   } catch (error) {
     console.log(error);
