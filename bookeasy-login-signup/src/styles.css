@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700,600|Open+Sans:400|Poppins:500,800");
+
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+:root {
+  --biscay: #152c5b;
+  --black: #000000;
+  --green: #24ab70;
+  --tropical-blue: #c8d3f9;
+  --white: #ffffff;
+
+  --font-size-l: 28px;
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+  --font-size-xl: 36px;
+  --font-size-xs: 18px;
+  --font-size-xxl: 64px;
+
+  --font-family-nunito: "Nunito", Helvetica;
+  --font-family-open_sans: "Open Sans", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.nunito-semi-bold-biscay-28px {
+  color: var(--biscay);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-tropical-blue-24px {
+  color: var(--tropical-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-semi-bold-green-20px {
+  color: var(--green);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-biscay-20px {
+  color: var(--biscay);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-medium-biscay-64px {
+  color: var(--biscay);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nunito-normal-biscay-24px {
+  color: var(--biscay);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-extra-bold-green-36px {
+  color: var(--green);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.opensans-normal-biscay-24px {
+  color: var(--biscay);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-bold-biscay-24px {
+  color: var(--biscay);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.nunito-bold-biscay-28px {
+  color: var(--biscay);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.nunito-semi-bold-biscay-20px {
+  color: var(--biscay);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.poppins-medium-green-64px {
+  color: var(--green);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}

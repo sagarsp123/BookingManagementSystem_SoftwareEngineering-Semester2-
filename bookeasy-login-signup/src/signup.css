@@ -1,0 +1,73 @@
+.already_have {
+  height: 43px;
+  width: 480px;
+
+  position: relative;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.already_have_text {
+  letter-spacing: 2.4px;
+  line-height: normal;
+  min-height: 39px;
+}
+
+.text_header_r {
+  position: relative;
+  margin-top: 15px;
+
+  /* top: 30px; */
+}
+
+.button_header {
+  position: relative;
+  margin-top: 64px;
+  margin-left: 200px;
+}
+
+.right_spacing {
+  position: fixed;
+  right: 150px;
+  top: 70px;
+}
+
+.explorer_pic_left {
+  position: fixed;
+  top: 60px;
+  right: 950px;
+}
+
+.line_r {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.firebase_auth_r {
+  position: relative;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.help_r {
+  position: fixed;
+  top: 23px;
+  right: 316px;
+
+  cursor: pointer;
+}
+
+.contact_r {
+  position: fixed;
+  top: 23px;
+  right: 139px;
+
+  cursor: pointer;
+}
+
+.home-button_r {
+  position: fixed;
+  top: 20px;
+  right: 54px;
+}
