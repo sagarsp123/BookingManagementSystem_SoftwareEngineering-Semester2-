@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require('dotenv');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.SERVER_PORT || 3000;
 const userRoutes = require("./routes/user-routes");
 
 const {sequelize} = require('./models');
@@ -22,11 +22,6 @@ app.use((err, req, res, next) => {
   console.log("Something went wrong!!!");
   return res.status(404).json({ error: "Something went wrong"});
 })
-
-app.get("/test", (req, res) => {
-  console.log("Test was called!");
-  res.send("Node setup worked");
-});
 
 app.listen(port, async () => {
   await sequelize.sync();
