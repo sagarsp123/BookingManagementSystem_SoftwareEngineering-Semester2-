@@ -1,0 +1,38 @@
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) DEFAULT 'Guest',
+  `last_name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `phone_number` varchar(255) DEFAULT NULL,
+  `photo_url` varchar(255) NOT NULL DEFAULT 'https://static.vecteezy.com/system/resources/previews/013/042/571/large_2x/default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.jpg',
+  `auth_type` varchar(255) NOT NULL,
+  `reset_token` varchar(255) DEFAULT NULL,
+  `token_exp_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `phone_number` (`phone_number`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `hotels` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `city` varchar(30) NOT NULL,
+  `state` varchar(30) NOT NULL,
+  `pincode` varchar(15) NOT NULL,
+  `country` varchar(20) NOT NULL,
+  `contact_no` varchar(15) NOT NULL,
+  `price` float NOT NULL,
+  `rooms` int NOT NULL,
+  `beds_per_room` int NOT NULL,
+  `guests_per_room` int NOT NULL,
+  `bathrooms` int NOT NULL,
+  `wifi` tinyint(1) NOT NULL,
+  `television` tinyint(1) NOT NULL,
+  `owner_id` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `owner_id` (`owner_id`),
+  CONSTRAINT `hotels_ibfk_1` FOREIGN KEY (`owner_id`) REFERENCES `owners` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
